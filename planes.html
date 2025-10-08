@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes | GymFreePro</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="nav-wrapper blue-grey darken-4">
+    <div class="container">
+      <a href="index.html" class="brand-logo">GymPro 🏋️‍♂️</a>
+      <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="clases.html">Clases</a></li>
+        <li class="active"><a href="planes.html">Planes</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-sidenav">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="clases.html">Clases</a></li>
+    <li class="active"><a href="planes.html">Planes</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+
+  <!-- Título -->
+  <div class="container section">
+    <h2 class="center-align">Elige tu Plan</h2>
+    <p class="center-align grey-text">Encuentra el plan que se adapta a tu estilo de vida y objetivos.</p>
+  </div>
+
+  <!-- Tarjetas de planes -->
+  <div class="container">
+    <div class="row">
+
+      <!-- Plan Básico -->
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="card-content center-align">
+            <span class="card-title">Plan Básico</span>
+            <h5>$80.000 / mes</h5>
+            <ul class="grey-text text-darken-2">
+              <li>✅ Acceso ilimitado al gimnasio</li>
+              <li>✅ 1 clase grupal semanal</li>
+              <li>✅ Evaluación física inicial</li>
+            </ul>
+          </div>
+          <div class="card-action center-align">
+            <a class="btn amber darken-2 modal-trigger" href="#modal-inscripcion">Inscribirme</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan Pro -->
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="card-content center-align">
+            <span class="card-title">Plan Pro</span>
+            <h5>$120.000 / mes</h5>
+            <ul class="grey-text text-darken-2">
+              <li>✅ Todo lo del Plan Básico</li>
+              <li>✅ 3 clases grupales semanales</li>
+              <li>✅ Acceso a zona de relax</li>
+            </ul>
+          </div>
+          <div class="card-action center-align">
+           <a class="btn amber darken-2 modal-trigger" href="#modal-inscripcion">Inscribirme</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan Elite -->
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="card-content center-align">
+            <span class="card-title">Plan Elite</span>
+            <h5>$180.000 / mes</h5>
+            <ul class="grey-text text-darken-2">
+              <li>✅ Todo lo del Plan Pro</li>
+              <li>✅ Entrenador personal</li>
+              <li>✅ Nutricionista mensual</li>
+            </ul>
+          </div>
+          <div class="card-action center-align">
+            <a class="btn amber darken-2 modal-trigger" href="#modal-inscripcion">Inscribirme</a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- seccion de inscripcion -->
+   <!-- Modal de inscripción -->
+<div id="modal-inscripcion" class="modal">
+  <div class="modal-content">
+    <h4>Formulario de Inscripción</h4>
+    <p>Completa tus datos para registrarte en el plan seleccionado.</p>
+
+    <form>
+      <div class="input-field">
+        <input id="nombre" type="text" class="validate" required>
+        <label for="nombre">Nombre completo</label>
+      </div>
+
+      <div class="input-field">
+        <input id="correo" type="email" class="validate" required>
+        <label for="correo">Correo electrónico</label>
+      </div>
+
+      <div class="input-field">
+        <input id="telefono" type="tel" class="validate" required>
+        <label for="telefono">Teléfono</label>
+      </div>
+
+      <div class="input-field">
+        <select id="plan">
+          <option value="" disabled selected>Elige tu plan</option>
+          <option value="basico">Plan Básico</option>
+          <option value="pro">Plan Pro</option>
+          <option value="elite">Plan Elite</option>
+        </select>
+        <label for="plan">Tipo de Plan</label>
+      </div>
+
+      <div class="center-align">
+        <button class="btn amber darken-2 waves-effect waves-light" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+    <!-- fin seccion de inscripcion -->
+  <!-- Footer -->
+  <footer class="page-footer blue-grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">GymPro</h5>
+          <p class="grey-text text-lighten-4">Transforma tu cuerpo y mente con nosotros.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Síguenos</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright blue-grey darken-4">
+      <div class="container">
+        © 2025 GymFreePro. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Sidenav
+    var sidenavs = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenavs);
+
+    // Modal
+    var modals = document.querySelectorAll('.modal');
+    M.Modal.init(modals);
+
+    // Select
+    var selects = document.querySelectorAll('select');
+    M.FormSelect.init(selects);
+  });
+</script>
+
+
+  </script>
+</body>
+</html>

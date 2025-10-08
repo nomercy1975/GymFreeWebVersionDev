@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GymFreePro | Tu Espacio para Entrenar</title>
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  </head>
+<body>
+
+  <h1>¡Hola, Gimnasio!</h1>
+
+
+<!-- Sidebar de navegacion -->
+  <header>
+
+    <!-- FALTA LOGO -->
+  <nav class="nav-wrapper blue-grey darken-4">
+    <div class="container">
+      <a href="index.html" class="brand-logo">GymPro 🏋️‍♂️</a>  
+      <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="index.html">Inicio</a></li>
+        <li><a href="clases.html">Clases</a></li>
+        <li><a href="planes.html">Planes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-sidenav">
+    <li class="active"><a href="index.html">Inicio</a></li>
+    <li><a href="clases.html">Clases</a></li>
+    <li><a href="planes.html">Planes</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</header>
+
+<!--  CUERPO CENTRAL -->
+
+
+
+
+<main>
+  <div class="parallax-container" style="height: 450px;">
+    <div class="parallax">
+      <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975&auto=format&fit=crop">
+    </div>
+    <div class="container">
+      <div class="row center-align">
+        <div class="col s12 white-text" style="padding-top: 80px;">
+          <h1 class="header">Construye tu Mejor Versión</h1>
+          <a href="#" class="btn-large waves-effect waves-light amber darken-2">Inscríbete Hoy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+
+
+<!-- TARJETAS DE SERVICIOS -->
+
+
+<section class="container section">
+  <div class="row">
+    <h2 class="center-align">Nuestros Servicios</h2>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image center-align">
+          <i class="material-icons large amber-text text-darken-2">fitness_center</i>
+        </div>
+        <div class="card-content center-align">
+          <span class="card-title">Pesas y Cardio</span>
+          <p>Equipos de última generación para que alcances tus metas de fuerza y resistencia.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image center-align">
+          <i class="material-icons large amber-text text-darken-2">group</i>
+        </div>
+        <div class="card-content center-align">
+          <span class="card-title">Clases Grupales</span>
+          <p>Disfruta de clases de Yoga, Zumba y CrossFit con los mejores instructores.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image center-align">
+          <i class="material-icons large amber-text text-darken-2">spa</i>
+        </div>
+        <div class="card-content center-align">
+          <span class="card-title">Zona de Relax</span>
+          <p>Relájate después de entrenar en nuestra zona de sauna y masajes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
+  <!-- FOOTER PIE DE PAGINA
+   
+  FALTA CREAR REDES SOCIALES Y LOGOS
+  
+  -->
+  <footer class="page-footer blue-grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">GymPro</h5>
+        <p class="grey-text text-lighten-4">El mejor lugar para transformar tu cuerpo y mente.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Redes Sociales</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright blue-grey darken-4">
+    <div class="container">
+      © 2025 GymFreePro. Todos los derechos reservados.
+    </div>
+  </div>
+</footer>
+
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- ACTIVAR PARALLAX -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar el Sidenav (menú móvil) --responsive
+    var sidenavs = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenavs);
+
+    // Inicializar el Parallax
+    var parallaxes = document.querySelectorAll('.parallax');
+    M.Parallax.init(parallaxes);
+  });
+</script>
+</body>
+</html>
